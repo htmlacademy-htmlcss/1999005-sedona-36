@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Vitaliy Gil](https://up.htmlacademy.ru/htmlcss/36/user/1999005).
-* Наставник: `Ирина Антипина`.
+* Наставник: [Ирина Антипина] (https://up.htmlacademy.ru/htmlcss/36/user/2108789).
 
 ---
 

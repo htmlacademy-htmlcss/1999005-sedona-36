@@ -12,7 +12,7 @@
       <header class="master-header">
         <nav class="navigation">
           <a class="navi-logo-link" href="index.html">
-            <img class="navi-logo-image" src="images/logo.svg" alt="логотип Седона." width="140" height="70">
+            <img class="navi-logo-image" src="images/icons/logo.svg" alt="логотип Седона." width="140" height="70">
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -210,7 +210,99 @@
             </a>
         </section>
       </footer>
+    </div>
+      <!-- модальное окно -->
 
+      <div class="modal-container modal-close">
+        <div class="modal modal-search">
+          <div class="modal-wrapper">
+             <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть.</span>
+            <svg class="close-button" width="15" height="15" viewBox="0 0 15 15" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M14.4905 1.78288L13.1982 0.49057L7.49048 6.19826L1.78279 0.49057L0.490479 1.78288L6.19817
+            7.49057L0.490479 13.1983L1.78279 14.4906L7.49048
+            8.78288L13.1982 14.4906L14.4905 13.1983L8.78279 7.49057L14.4905 1.78288Z"
+            fill="black" />
+        </svg>
+          </button>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          </div>
+
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="modal-group">
+              <legend class="visually-hidden">Форма поиска гостиницы</legend>
+              <ul class="modal-list">
+                <li class="modal-item arrival">
+                  <div class="input-container">
+                    <label class="input-title arrival-title" for="arrival">Дата Заезда:</label>
+                    <input class="modal-input" type="text" placeholder="Укажите дату" value="27 апреля 2020" name="arrival"
+                      id="arrival">
+                  </div>
+                  <span class="error-text">Мы не можем отправить вас в прошлое.</span>
+                </li>
+                <li class="modal-item departure">
+                  <div class="input-container">
+                    <label class="input-title departure-title" for="departure">Дата Выезда:</label>
+                    <input class="modal-input" type="text" value="1 сентября 2023" placeholder="Укажите дату"
+                      name="departure" id="departure">
+                  </div>
+                  <span class="free-rooms-text">На эти даты есть свободные номера. Пока есть.</span>
+                </li>
+                <li class="modal-item people">
+                  <div class="adults">
+                    <label class="input-title adult-title" for="adults">Взрослые:</label>
+                    <div class="counter-container">
+                      <button class="people-less" type="button"><span class="visually-hidden">Меньше людей.</span>
+                        <svg class="less-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0L0 2L14 2V0L0 0Z" />
+                        </svg>
+                      </button>
+                      <input class="modal-input-people" type="number" value="2" name="adults" id="adults">
+                      <button class="people-more" type="button"><span class="visually-hidden">Больше людей.</span>
+                        <svg class="more-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="child">
+                    <span class="input-title child-title">
+                      <label class="input-title child-title" for="child">Дети:</label>
+                      <span class="tooltip"><button class="tooltip-toggle" type="button"
+                          aria-labelledby="tooltip-label"><svg class="i-icon" width="2" height="12" viewBox="0 0 2 12"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H2V2H0V0ZM2 12H0V3H2V12Z" fill="white" />
+                          </svg></button>
+                        <span class="tooltip-text" id="tooltip-label" role="tooltip">Укажите количество детей,<br> которые
+                          будут с вами, возраст<br> которых
+                          от 6 до 18 лет.&nbsp;Дети<br> до 6 лет размещаются<br> бесплатно.
+                        </span></span></span>
+                    <div class="counter-container">
+                      <button class="people-less"><span class="visually-hidden">Меньше людей.</span>
+                        <svg class="less-icon" width="14" height="2" viewBox="0 0 14 2" fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M0 0L0 2L14 2V0L0 0Z" />
+                        </svg>
+                      </button>
+                      <input class="modal-input-people" type="number" value="2" name="child" id="child">
+                      <button class="people-more" type="submit"><span class="visually-hidden">Больше людей.</span>
+                        <svg class="more-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                      </svg>
+                      </button>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <button class="modal-search-button" type="submit">Найти</button>
+            </fieldset>
+          </form>
+        </div>
     </div>
 
 

@@ -15,7 +15,7 @@
     <header class="master-header">
         <nav class="navigation">
           <a class="navi-logo-link" href="index.html">
-            <img class="navi-logo-image" src= "images/logo.svg" alt="логотип Седона." width=140 height=70>
+            <img class="navi-logo-image" src= "images/icons/logo.svg" alt="логотип Седона." width=140 height=70>
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -26,6 +26,7 @@
             </li>
             <li class="navigation-item">
               <a class="navigation-item-link navigation-item-current" href="#">Гостиницы</a>
+              <hr class="navigation-decoration-feature">
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
@@ -66,26 +67,38 @@
                 <fieldset class="filter-form-infrastructure">
                     <legend class="catalog-filter-housing">Инфраструктура:</legend>
                     <label class="catalog-filter-control">
-                        <input class="control-infrastrucrure-input" type="checkbox" name="pool">Бассейн
+                        <input class="visually-hidden control-infrastrucrure-input" type="checkbox" name="pool">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Бассейн</span>
                     </label>
                     <label class="catalog-filter-control">
-                        <input class="control-infrastrucrure-input" type="checkbox" name="parking">Парковка
+                        <input class="visually-hidden control-infrastrucrure-input" type="checkbox" name="parking">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Парковка</span>
                     </label>
                     <label class="catalog-filter-control">
-                        <input class="control-infrastrucrure-input" type="checkbox" name="wi-fi">Wi-Fi
+                        <input class="visually-hidden control-infrastrucrure-input" type="checkbox" name="wi-fi">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Wi-Fi</span>
                     </label>
                 </fieldset>
 
                 <fieldset class="filter-form-housing">
                     <legend class="catalog-filter-housing">Тип жилья:</legend>
                     <label class="catalog-filter-control">
-                        <input class="control-housing-input" type="radio" name="housing" value="hotel">Гостиница
+                        <input class="visually-hidden control-housing-input" type="radio" name="housing" value="hotel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Гостиница</span>
                     </label>
                     <label class="catalog-filter-control">
-                        <input class="control-housing-input" type="radio" name="housing" value="motel">Мотель
+                        <input class="visually-hidden control-housing-input" type="radio" name="housing" value="motel">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Мотель</span>
                     </label>
                     <label class="catalog-filter-control">
-                        <input class="control-housing-input" type="radio" name="housing" value="apartments">Апартаменты
+                        <input class="visually-hidden control-housing-input" type="radio" name="housing" value="apartments">
+                        <span class="control-mark"></span>
+                        <span class="control-label">Апартаменты</span>
                     </label>
                 </fieldset>
 
@@ -93,11 +106,28 @@
                     <legend class="catalog-filter-housing">Стоимость, ₽:</legend>
 
                       <div class="control-price-input-wrapper">
-                        <input class="control-price-input" type="number"  name="start-price" value="" placeholder="от">
-                        <input class="control-price-input" type="number"  name="end-price" value="" placeholder="до">
+                        <label class="price-input-from">
+                          <input class="control-price-input price-from" type="number"  name="start-price" value="0" placeholder="от">
+                          <span class="text-from">от</span></label>
+                        </label>
+                        <label class="price-input-to">
+                           <input class="control-price-input price-to" type="number"  name="end-price" value="9000" placeholder="до">
+                           <span class="text-to">до</span>
+                          </label>
+                        </label>
                       </div>
+                      <div class="range">
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 10px; width: 207px">
+                            <button class="range-toggle toggle-min">
+                              <span class="visually-hidden">Изменить минимальную цену.</span>
+                            </button>
+                            <button class="range-toggle toggle-max">
+                              <span class="visually-hidden">Изменить максимальную цену.</span>
+                            </button>
+                          </div>
+                        </div>
 
-                      <input class="control-price-range" type="range"  name="price" min="0" max="9000" step="10" value="0">
                 </fieldset>
                 <div class="filter-form-button-wrapper">
                   <button class="filter-form-button button-submit" type="submit">Применить</button>

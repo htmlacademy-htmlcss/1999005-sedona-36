@@ -2,14 +2,14 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы | Седона</title>
 </head>
-<div class="container">
 <body>
+  <div class="container">
     <header class="master-header">
         <nav class="navigation">
           <a class="navi-logo-link" href="index.html">
@@ -100,14 +100,13 @@
                     <legend class="catalog-filter-housing">Стоимость, ₽:</legend>
                       <div class="control-price-input-wrapper">
                         <label class="price-input-from">
-                          <input class="control-price-input price-from" type="number"  name="start-price" value="0" placeholder="от">
-                          <span class="text-from">от</span></label>
+                          <input class="control-price-input price-from" type="number"  name="start-price"  placeholder="0">
+                          <span class="text-from">от</span>
                         </label>
                         <label class="price-input-to">
-                           <input class="control-price-input price-to" type="number"  name="end-price" value="9000" placeholder="до">
+                           <input class="control-price-input price-to" type="number"  name="end-price"  placeholder="9000">
                            <span class="text-to">до</span>
                           </label>
-                        </label>
                       </div>
                       <div class="range">
                         <div class="range-scale">
@@ -120,6 +119,7 @@
                             </button>
                           </div>
                         </div>
+                      </div>
                 </fieldset>
                 <div class="filter-form-button-wrapper">
                   <button class="filter-form-button button-submit" type="submit">Применить</button>
@@ -157,7 +157,7 @@
                   </g>
                   <rect  width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/>
                   <defs>
-                    <clipPath id="a">
+                    <clipPath id="b">
                       <path fill="#fff" d="M16 17h16v14H16z"/>
                     </clipPath>
                   </defs>
@@ -171,7 +171,7 @@
                   </g>
                   <rect width="46" height="46" x="1" y="1" stroke="#E5E5E5" stroke-width="2" rx="3"/>
                   <defs>
-                    <clipPath id="a">
+                    <clipPath id="c">
                       <path fill="#fff" d="M16 17h16v14H16z"/>
                     </clipPath>
                   </defs>
@@ -251,6 +251,7 @@
             </ul>
         </section>
         <section class="pagination">
+          <h2 class="visually-hidden">Пагинация</h2>
             <ol class="pagination-list">
                 <li class="pagination-item">
                     <a class="pagination-link pagination-link-current" href="#">1</a>
@@ -282,6 +283,7 @@
       </main>
       <footer class="footer-index">
         <section class="footer-social-links">
+          <h2 class="visually-hidden">Седона в оциальных сетях.</h2>
           <ul class="social-links-list">
             <li class="social-links-item ">
               <a class="footer-link-vk" href="https://vk.com/htmlacademy">
@@ -321,9 +323,11 @@
           </ul>
         </section>
         <section class="footer-phone">
+          <h2 class="visually-hidden">Телефон Седоны.</h2>
             <a class="footer-link-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
         <section class="footer-logo">
+          <h2 class="visually-hidden">Логотип Седоны.</h2>
             <a class="footer-logo-link" href="https://htmlacademy.ru/">
               <svg class="foter-logo-image" aria-hidden="true" focusable="false"  xmlns="http://www.w3.org/2000/svg" width="115" height="34" fill="none">
                 <path fill="#000" d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6
@@ -355,6 +359,6 @@
             </a>
         </section>
       </footer>
+   </div>
 </body>
-</div>
 </html>
